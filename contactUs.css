@@ -1,0 +1,214 @@
+/* Import base styles */
+@import url('styles.css');
+
+/* Contact Page Specific Styles */
+.contact-hero {
+    background: #1a2332 !important;
+    color: white;
+    text-align: center;
+    padding: 8rem 0 5rem;
+}
+
+.contact-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.contact-hero h3 {
+    color: #8bb3d9;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.contact-hero p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-methods {
+    background: #1a2332 !important;
+    padding: 5rem 0;
+    color: white;
+}
+
+.contact-methods h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-methods > .container > p {
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.contact-method {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(45, 74, 107, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(45, 74, 107, 0.5);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: #2d4a6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-method h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-method p {
+    color: #8bb3d9;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-method span {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    background: #1a2332 !important;
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.contact-form-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-form-section > .container > p {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 3rem auto 0;
+    background: rgba(45, 74, 107, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8bb3d9;
+    box-shadow: 0 0 0 3px rgba(139, 179, 217, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Active state for contact button */
+.contact-btn.active {
+    background: #3a5a7d;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+        margin: 2rem auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-method {
+        padding: 1.5rem;
+    }
+}

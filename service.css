@@ -1,0 +1,226 @@
+/* Import base styles */
+@import url('styles.css');
+
+/* Services Page Specific Styles */
+.services-hero {
+    background: #1a2332 !important;
+    color: white;
+    text-align: center;
+    padding: 8rem 0 5rem;
+}
+
+.services-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.services-hero .slogan {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin: 1rem 0;
+}
+
+.hero-cta {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(45, 74, 107, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-cta h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.services-detailed {
+    background: #1a2332 !important;
+    padding: 5rem 0;
+    color: white;
+}
+
+.services-detailed h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.services-detailed h3 {
+    color: #8bb3d9;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.service-detail-card {
+    background: rgba(45, 74, 107, 0.3);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #8bb3d9;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.service-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-left-color: #8bb3d9;
+    background: rgba(45, 74, 107, 0.5);
+}
+
+.service-detail-card h3 {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.service-detail-card p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.discover-link {
+    color: #8bb3d9;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.discover-link:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.service-slogans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.service-slogans span {
+    background: #2d4a6b;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-slogans span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #3a5a7d;
+}
+
+.what-makes-best {
+    background: #1a2332 !important;
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.what-makes-best h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.what-makes-best p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.best-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature {
+    background: rgba(45, 74, 107, 0.3);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(45, 74, 107, 0.5);
+}
+
+.feature h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    color: #8bb3d9;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 2rem 0 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-card {
+        padding: 1.5rem;
+    }
+
+    .service-slogans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-slogans span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .best-features {
+        grid-template-columns: 1fr;
+    }
+
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-cta {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+
+    .service-detail-card {
+        padding: 1rem;
+    }
+
+    .hero-cta {
+        padding: 1rem;
+    }
+}
